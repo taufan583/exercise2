@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="exercise2.css" />
+    </head>
+
+    <body>
+        <h1>kalkulator sederhana</h1>
+        <h4>menghitung angka</h4>
+
+        <label for="">angka1</label>
+        <input type="number" id="angka1">
+        <br>
+        <br>
+        <label for="">angka2</label>
+        <input type="number" id="angka2">
+        <br>
+        <br>
+        <label for="">hasil</label>
+        <input type="number" id="hasil" disabled>
+        <br>
+        <br>
+
+        <button onclick="ftambah()">tambah (+)</button>
+        <button onclick="fkurang()">kurang (-)</button>
+        <button onclick="fkali()">kali (*)</button>
+        <button onclick="fbagi()">bagi (/)</button>
+
+        <script>
+        var angka1 =document.getElementById("angka1");
+        var angka2 =document.getElementById("angka2");
+        var hasil =document.getElementById("hasil");
+
+        function ftambah(){
+            hasil.value = Number(angka1.value) + Number(angka2.value);
+        }
+        function fkurang(){
+            hasil.value = Number(angka1.value) - Number(angka2.value);
+        }
+        function fkali(){
+            hasil.value = Number(angka1.value) * Number(angka2.value);
+        }
+        function fbagi(){
+            hasil.value = Number(angka1.value) / Number(angka2.value);
+        }
+        </script>
+    </body>
+</html>
